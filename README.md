@@ -1,26 +1,26 @@
-# 🤖 Alfred: AI Assistant with Model Context Protocol (MCP) & Extensible Tools
+#  Alfred: AI Assistant with Model Context Protocol (MCP) & Extensible Tools
 
 Alfred is a highly customizable AI Assistant built using **LangChain**, **Google Gemini 2.5 Flash**, and the **Model Context Protocol (MCP)**. It serves as both a conversational assistant and a tool-integrated agent capable of searching the web, executing calculations, retrieving Wikipedia articles, querying local documents via a custom MCP server, and searching GitHub repositories using the official GitHub MCP server.
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-*   **⚡ Streamed Conversational AI**: Utilizes `gemini-2.5-flash` with streaming responses for real-time conversation.
-*   **🛠️ Built-in Tool Suite**:
+*   ** Streamed Conversational AI**: Utilizes `gemini-2.5-flash` with streaming responses for real-time conversation.
+*   ** Built-in Tool Suite**:
     *   **Web Search**: Powered by DuckDuckGo (`ddgs`) to fetch and summarize web search results.
     *   **Wikipedia Integration**: Searches and retrieves summaries of topics directly from Wikipedia.
     *   **Calculator**: Dynamically evaluates math expressions securely.
     *   **Local Time**: Accesses current local date and time.
     *   **Chat Memory**: Tracks and displays conversation logs in-memory.
-*   **🔌 Model Context Protocol (MCP) Integration**:
+*   ** Model Context Protocol (MCP) Integration**:
     *   **Local Document Server**: A custom `FastMCP` server (`document_server.py`) exposing tools to list and read documents from a local folder.
     *   **GitHub MCP Client**: Uses `stdio` communication to interface with `@modelcontextprotocol/server-github`, allowing search of GitHub repositories using official GitHub tools.
-*   **📄 Structured Output Extraction**: Employs Pydantic schemas and `PydanticOutputParser` to reliably extract entity information (e.g., Person data, task events with dates/times) from unstructured text.
+*   ** Structured Output Extraction**: Employs Pydantic schemas and `PydanticOutputParser` to reliably extract entity information (e.g., Person data, task events with dates/times) from unstructured text.
 
 ---
 
-## 📐 System Architecture & Workflow
+##  System Architecture & Workflow
 
 The following diagram illustrates the flow of control and data inside the AI Assistant:
 
@@ -62,7 +62,7 @@ flowchart TD
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```directory
 AI-Assistant/
@@ -147,7 +147,7 @@ AI-Assistant/
 
 ---
 
-## 🚀 How to Run and Use
+##  How to Run and Use
 
 ### Starting the CLI Assistant
 To launch the interactive CLI prompt, run:
@@ -184,5 +184,5 @@ python chatbot/mcp/servers/document_server.py
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 Feel free to open issues or submit pull requests to extend the toolsets or refine the Streamlit GUI.
